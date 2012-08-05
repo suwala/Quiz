@@ -19,7 +19,18 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        Log.d("ran:配列数:配列1-3","1前");
+        Randam_i randam = new Randam_i(3,3);
+        Log.d("ran:配列数:配列1-3",randam.box[0].toString()+randam.box[1].toString()+randam.box[2].toString());
                 		
+    }
+    
+    public void randam(View v){
+    	Randam_i randam = new Randam_i(2,2);
+    	//Log.d("ran:配列数:配列1-3",randam.box[0].toString()+randam.box[1].toString()+randam.box[2].toString()+randam.box[3].toString()+randam.box[4].toString());
+    
+    	Log.d("ran:配列数:配列1-3",randam.box[0].toString()+randam.box[1].toString());
     }
 
 //    @Override

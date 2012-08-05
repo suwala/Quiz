@@ -29,6 +29,7 @@ public class Result extends Activity{
     }
 	
 	public void toTitle(View view){
+		Question.a_c = 0;
 		Intent i=new Intent(this,MainActivity.class);
 		this.startActivity(i);
 	}

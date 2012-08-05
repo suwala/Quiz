@@ -4,10 +4,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title">インスタントクイズ</string>
+    <string name="title">しんぷる四択クイズ</string>
     <string name="touch">Touch On Start</string>
-    <string name="genre">ジャンルを\n選択して下さい</string>
+    <string name="genre">ジャンルを\n選択して下さい\n現在未実装</string>
     <string name="a_count"></string>
     <string name="return1">タイトルへ戻る</string>
+    <string name="all_gnr">全ジャンル</string>
 
 </resources>

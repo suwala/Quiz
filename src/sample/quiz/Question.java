@@ -30,13 +30,16 @@ public class Question extends Activity{
     SQLiteDatabase db = dbh.getReadableDatabase();
     Cursor c = db.query("雑学", new String[] {"question","choices1","choices2","choices3","choices4","ans"}, null,null,null,null,null);
     boolean isEof = c.moveToFirst();
-	
+    public Randam_i ran = new Randam_i(6,q_syutudai);//randam関数引数指定型　
+    //public Randam_i ran = new Randam_i(q_count,q_syutudai);q_countで配列の
+    
+    
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question);
         
-        
+        //db上の問題数のカウント
         for(q_count=0;isEof;q_count++){
         	isEof = c.moveToNext();
         }
@@ -44,7 +47,7 @@ public class Question extends Activity{
         
         
         
-        
+        //問題をランダムに取得　メソッドかしたい
         int i = 0;
         while(true){
         	if(i>=q_ran.length)
@@ -52,6 +55,8 @@ public class Question extends Activity{
         	q_ran[i] = (int) (Math.random()*q_count);
         	i++;
         }
+        
+        
         
         Log.d("q_ran",q_ran[0].toString()+":"+q_ran[1].toString()+":"+q_ran[2].toString());
         this.question2();
@@ -143,7 +148,7 @@ public class Question extends Activity{
 			 //ハマリ　c.moveはオフセット現在地からの移動のためtoFirstで最初の地点へ戻す必要があった
 			 
 			 c.moveToFirst();
-			 c.move(q_ran[q_c]);
+			 c.move(ran.box[q_c]);
 			 Log.d("c.move",c.toString());
 			 TextView tv = (TextView)findViewById(R.id.quetion);
 			 tv.setText(c.getString(0));
@@ -196,6 +201,7 @@ public class Question extends Activity{
 				btn.setText("正解！");
 				
 				a_c++;
+				Log.d("a_c",a_c.toString());
 				q=false;
 			}else{
 			//選択肢を消去
@@ -234,4 +240,6 @@ public class Question extends Activity{
 	    	wait(msec);
 	    	}catch(InterruptedException e){}
 	    }
+	  
+	
 }

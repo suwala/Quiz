@@ -46,6 +46,7 @@ public final class R {
     }
     public static final class string {
         public static final int a_count=0x7f050007;
+        public static final int all_gnr=0x7f050009;
         public static final int app_name=0x7f050000;
         public static final int genre=0x7f050006;
         public static final int hello_world=0x7f050001;

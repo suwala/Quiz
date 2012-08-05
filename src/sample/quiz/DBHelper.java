@@ -45,7 +45,7 @@ public class DBHelper extends SQLiteOpenHelper {
 		Log.v("DB","成功");
 		
 		//クイズ登録
-		db.execSQL("insert into 雑学(question,choices1,choices2,choices3,choices4,ans) values ('正解は？','越後製菓', '越後製菓','越後製菓','越後製菓','越後製菓');");
+		//db.execSQL("insert into 雑学(question,choices1,choices2,choices3,choices4,ans) values ('正解は？','越後製菓', '越後製菓','越後製菓','越後製菓','越後製菓');");
 		
 		//毎回insert~を入れるのが面倒なので引数を返すメソッドを作る
 		
@@ -55,7 +55,8 @@ public class DBHelper extends SQLiteOpenHelper {
 		db.execSQL(execsql("雑学","甲子園球場がある都道府県は？","大阪府","京都府","島根県","兵庫県","兵庫県"));
 		db.execSQL(execsql("雑学","アルファベットの由来となったものはアルファと何？","ビータ","ベータ","ベッド","ビーズ","ベータ"));
 		db.execSQL(execsql("雑学","I Love Youを「月が綺麗ですね」と訳した人物は？","福沢諭吉","坂本竜馬","芥川龍之介","夏目漱石","夏目漱石"));
-		db.execSQL(execsql("雑学","光速の異名を持ち重力を自在に操る高貴なる女性騎士と言えば？","エアリス","ライトニング","セリス","ジェクト","ライトニング"));
+		db.execSQL(execsql("雑学","別名、海のミルクとも呼ばれる物は？","あさり","赤貝","牡蠣","ホタテ","牡蠣"));
+		
 		
 		
 		

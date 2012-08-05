@@ -25,7 +25,7 @@
             <Button
                 android:id="@+id/button1"
                 android:layout_height="match_parent"
-                android:text="Button" 
+                android:text="@string/all_gnr"
                 android:layout_weight="1"
                 android:onClick="qesS"/>
 
@@ -33,8 +33,7 @@
                 android:id="@+id/button2"
                 android:layout_height="match_parent"
                 android:text="Button" 
-                android:layout_weight="1"
-                android:onClick="qesS"/>
+                android:layout_weight="1"/>
 
         </TableRow>
 
@@ -47,15 +46,13 @@
                 android:id="@+id/button3"
                 android:layout_height="match_parent"
                 android:text="Button" 
-                android:layout_weight="1"
-                android:onClick="qesS"/>
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/button5"
                 android:layout_height="match_parent"
                 android:text="Button" 
-                android:layout_weight="1"
-                android:onClick="qesS"/>
+                android:layout_weight="1"/>
 
         </TableRow>
 
@@ -67,16 +64,14 @@
                 android:id="@+id/button4"
                 android:layout_height="match_parent"
                 android:text="Button" 
-                android:layout_weight="1"
-                android:onClick="qesS"/>
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/button6"
 
                 android:layout_height="match_parent"
                 android:text="Button" 
-                android:layout_weight="1"
-                android:onClick="qesS"/>
+                android:layout_weight="1"/>
 
         </TableRow>
     </TableLayout>
