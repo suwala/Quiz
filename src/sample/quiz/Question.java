@@ -39,7 +39,7 @@ public class Question extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question);
         
-        //db上の問題数のカウント
+        //db上の問題数のカウン
         for(q_count=0;isEof;q_count++){
         	isEof = c.moveToNext();
         }
